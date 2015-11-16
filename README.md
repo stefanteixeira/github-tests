@@ -11,9 +11,7 @@ The project contains automated UI tests written in Node.js using:
 
 **PS:** The tests are written using the [Page Object Pattern](http://martinfowler.com/bliki/PageObject.html).
 
----
-
-### Requirements
+## Requirements
 
 - Node.js
 - Google Chrome
