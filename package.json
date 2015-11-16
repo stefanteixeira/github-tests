@@ -1,0 +1,19 @@
+{
+  "name": "github-tests",
+  "version": "1.0.0",
+  "description": "Simple UI Tests running against github.com",
+  "main": "index.js",
+  "scripts": {
+    "install": "node node_modules/protractor/bin/webdriver-manager update"
+  },
+  "author": "Stefan Teixeira",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-protractor-runner": "~2.1.0",
+    "grunt-protractor-webdriver": "~0.2.5",
+    "protractor": "~2.5.1",
+    "protractor-jasmine2-html-reporter": "~0.0.5"
+  }
+}
