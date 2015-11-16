@@ -55,6 +55,9 @@ An HTML report will be automatically generated in the ```reports``` directory. F
 
 ![](http://i.imgur.com/7Dc8lMg.png)
 
+I used the **protractor-jasmine2-html-reporter** lib to generate the reports, because they look really great. Unfortunately, there is a [small issue with the screenshot generation](https://github.com/Kenzitron/protractor-jasmine2-html-reporter/issues/8). A quick workaround to make the screenshots appear successfully was to declare ```afterAll(function () {})";``` in the test specs.
+
+
 ## Continuous Integration
 
 After every commit, [CircleCI](https://circleci.com/) will build and run the [project](https://circleci.com/gh/stefanteixeira/github-tests). CircleCI is a cloud-based Continuous Integration server, which has easy integration with GitHub repositories. The build steps are defined in the ```circle.yml``` file. CircleCI is also archiving the generated test reports (if logged in, you can see the reports in the "Artifacts" tab).
