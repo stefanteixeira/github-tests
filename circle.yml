@@ -1,0 +1,11 @@
+general:
+  artifacts:
+    - "reports"
+
+dependencies:
+  override:
+    - npm install -g grunt
+
+test:
+  override:
+    - grunt
