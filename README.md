@@ -43,7 +43,7 @@ The project is also configured to run tests in the cloud, using [Sauce Labs](htt
 
 To run tests in Sauce Labs, a "saucelabs" Grunt task was created. So, you just need to run:
 
-    ```grunt saucelabs```
+  ```grunt saucelabs```
 
 You can add or edit these environments as you want. Sauce Labs provides a [Platform Configurator](https://docs.saucelabs.com/reference/platforms-configurator/#/) to help with that.
 
@@ -59,6 +59,7 @@ An HTML report will be automatically generated in the ```reports``` directory. F
 
 After every commit, [CircleCI](https://circleci.com/) will build and run the [project](https://circleci.com/gh/stefanteixeira/github-tests). CircleCI is a cloud-based Continuous Integration server, which has easy integration with GitHub repositories. The build steps are defined in the ```circle.yml``` file. CircleCI is also archiving the generated test reports (if logged in, you can see the reports in the "Artifacts" tab).
 
+**PS:** The CircleCI build is using Node.js **0.10.33** and Ubuntu 12.04. 
 
 
 
