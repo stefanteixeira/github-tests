@@ -42,6 +42,8 @@ The project is also configured to run tests in the cloud, using [Sauce Labs](htt
 - Firefox 42 + OS X 10.10 (Yosemite)
 
 You can add or edit these environments as you want. Sauce Labs provides a [Platform Configurator](https://docs.saucelabs.com/reference/platforms-configurator/#/) to help with that.
+
+**PS:** The project is using a sample Sauce Labs user. In a real-world project, the username/accessKey would be passed by environment variables.
   
 ## Reports
 
