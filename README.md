@@ -16,6 +16,8 @@ The project contains automated UI tests written in Node.js using:
 - Node.js
 - Google Chrome
 
+**PS:** The project was developed on OS X Yosemite, with Node.js **0.10.33** and Chrome **46.0**.
+
 ## Setup
 
 - Install Grunt and Grunt-CLI globally:
@@ -26,7 +28,7 @@ The project contains automated UI tests written in Node.js using:
 
   ```npm install```
   
-- To run all tests:
+- To run all tests locally:
 
   ```grunt ```
 
@@ -34,10 +36,14 @@ The default Grunt task will run a jshint check on the code syntax, start webdriv
 
 ## Running tests in the cloud
 
-The project is also configured to run tests in the cloud, using [Sauce Labs](https://saucelabs.com/). The ```conf-saucelabs.js``` file defines two environments in which the tests will run:
+The project is also configured to run tests in the cloud, using [Sauce Labs](https://saucelabs.com/). The ```conf-saucelabs.js``` file defines two environments in which the tests may run:
 
 - Chrome 46 + Windows 8
 - Firefox 42 + OS X 10.10 (Yosemite)
+
+To run tests in Sauce Labs, a "saucelabs" Grunt task was created. So, you just need to run:
+
+    ```grunt saucelabs```
 
 You can add or edit these environments as you want. Sauce Labs provides a [Platform Configurator](https://docs.saucelabs.com/reference/platforms-configurator/#/) to help with that.
 
