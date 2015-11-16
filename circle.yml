@@ -9,3 +9,4 @@ dependencies:
 test:
   override:
     - grunt
+    - sed -i -- 's,//,/,g' reports/htmlReport.html
