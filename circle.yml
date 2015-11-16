@@ -4,7 +4,7 @@ general:
 
 dependencies:
   override:
-    - npm install -g grunt
+    - npm install -g grunt grunt-cli
 
 test:
   override:

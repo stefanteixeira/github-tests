@@ -9,7 +9,7 @@ exports.config = {
     browser.ignoreSynchronization = true;
     browser.driver.manage().window().maximize();
 		jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({
-			savePath: './reports/'
+			savePath: 'reports/'
 		}));
   }
 }
