@@ -19,10 +19,15 @@ module.exports = function(grunt) {
         configFile: "conf.js",
         keepAlive: false,
         noColor: false,
-        args: {
-        }
+        args: {}
       },
-      all: {}
+      saucelabs: {
+        configFile: "conf-saucelabs.js",
+        keepAlive: false,
+        noColor: false,
+        args: {}
+      },
+
     }
   });
 
@@ -31,4 +36,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-protractor-runner');
 
   grunt.registerTask("default", ["jshint", "protractor_webdriver", "protractor"]);
+  grunt.registerTask("saucelabs", ["jshint", "protractor:saucelabs"]);
 };
